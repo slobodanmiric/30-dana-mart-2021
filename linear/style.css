@@ -141,8 +141,28 @@ intro
 blog 
 ****************/
 .blog {
-    
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+.blog article {
+    flex: 0 0 48%;
+    text-align: center;
+}
+.blog img {
+    width: 100%;
+}
+.blog h3 {
+    font-weight: 300;
+    padding-top: 40px;
+    font-size: 2rem;
+}
+.blog p {
+    font-weight: 300;
+    padding: 50px 0;
+}
+
 
 
 
