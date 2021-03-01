@@ -11,6 +11,9 @@
     --transitions: .4s ease;
     --padding: 100px 0;
 }
+/****************
+basic styles
+****************/
 * {
     margin: 0;
     padding: 0;
@@ -23,3 +26,60 @@ body {
     line-height: 1.6;
     font-weight: 300;
 }
+ul {
+    list-style: none;
+}
+/****************
+header
+****************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav {
+    padding: 20px 0;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px var(--primary);
+}
+header hgroup {
+    position: absolute;
+    top: 27%;
+    text-align: center;
+}
+hgroup h1 {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 0 0 5px var(--primary);
+}
+hgroup h5 {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.3rem; 
+}
+
+
+
+
+
+
