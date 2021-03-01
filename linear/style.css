@@ -29,6 +29,10 @@ body {
 ul {
     list-style: none;
 }
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
 /****************
 header
 ****************/
