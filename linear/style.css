@@ -162,6 +162,24 @@ blog
     font-weight: 300;
     padding: 50px 0;
 }
+/****************
+blockquote
+****************/
+.blockquote {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blockquote blockquote {
+    color: var(--white);
+    opacity: .7;
+    text-align: center;
+    font-size: 1.7rem;
+}
 
 
 
