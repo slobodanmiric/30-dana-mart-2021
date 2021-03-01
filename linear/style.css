@@ -180,7 +180,40 @@ blockquote
     text-align: center;
     font-size: 1.7rem;
 }
-
-
-
+/****************
+footer
+****************/
+footer {
+    padding: var(--padding);
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+footer hr {
+    border: none;
+    background: var(--darkGray);
+    height: 1px;
+    margin: 50px auto;
+}
+footer h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+footer p {
+    font-size: 1.5rem;
+    color: var(--darkGray);
+    padding: 30px 0;
+}
+.copy {
+    font-size: .9rem;
+}
+footer a {
+    color: var(--darkGray);
+    margin: 10px;
+    font-size: 2rem;
+}
+footer a:hover {
+    color: var(--white);
+    transition: var(--transition);
+}
 
