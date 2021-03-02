@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        #roditelj {
+            display: flex;
+            width: 700px;
+            height: 400px;
+            border: 1px solid red;
+            justify-content: space-between;
+/*            align-items: stretch;*/
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 100px;
+        }
+        .box-1 {
+            background: red;
+            width: 100px;
+        }
+        .box-2 {
+            background: blue;
+            width: 100px;
+        }
+        .box-3 {
+            background: orange;
+            width: 100px;
+        }
+        .box-4 {
+            background: green;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="roditelj">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="box-4">Box 4</div>
+    </section>
+</body>
+</html>
