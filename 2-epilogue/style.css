@@ -2,7 +2,62 @@
 :root {
     --fontFamily: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
+    --fontSize: 16px;
+    --white: #fff;
+    --bg: #f4f4f4;
+}
+/*************
+basic styles
+*************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    background: var(--bg);
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
+/*************
+header
+*************/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(images/banner.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-family: var(--logo);
+    font-size: 6rem;
+    color: var(--white);
+}
+.underline {
+    width: 35%;
+    height: 2px;
+    background: var(--white);
+    margin: 10px auto 50px auto;
+}
+header p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: .7;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
