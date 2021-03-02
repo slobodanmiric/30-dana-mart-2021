@@ -114,6 +114,58 @@ intro
     font-size: 1.4rem;
     padding-bottom: 30px;
 }
+/*************
+blog
+*************/
+.blog {
+    padding: 0px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog article {
+    flex: 0 48%;
+    margin-bottom: 60px;
+}
+.featured-image {
+    position: relative;
+}
+.featured-image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+.featured-image h3 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 0 0 3px black;
+}
+.blog .text {
+    background: var(--white);
+    text-align: center;
+    padding: 70px;
+    border-radius: 5px;
+}
+.holder {
+    overflow: hidden;
+}
+.blog a {
+    display: block;
+}
+.blog a:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+
+
+
 
 
 
