@@ -5,15 +5,111 @@
     --accents: #f32853;
     --hover: #f44066;
     --white: #fff;
-    --headings: #484848;
+    --headings: #484848; /* rgb(72, 72, 72) */
     --text: #666;
     --gray: #aaaaaa;
+    --transition: .3s ease;
+}
+/***************
+basic styles
+***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: var(--fontFamily);
     font-weight: 400;
-    font-size: vr(--fontSize);
+    font-size: var(--fontSize);
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
+ul {
+    list-style: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+button {
+    padding: 25px 50px;
+    background: var(--accents);
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--hover);
+}
+/***************
+header
+***************/
+header {
+    background-image: linear-gradient(rgba(72, 72, 72,.9), rgba(72, 72, 72,.9)), url(img/banner.jpg);
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px 0;
+}
+.logo span {
+    font-weight: 700;
+}
+.logo {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.logo:hover {
+    color: var(--accents);
+}
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a {
+    color: var(--white);
+    opacity: .7;
+    margin-left: 70px;
+    font-size: 1.2rem;
+}
+header ul li a:hover {
+    color: var(--white);
+    opacity: 1;
+}
+header ul {
+    display: flex;
+}
+header div {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+header div h1 {
+    color: var(--white);
+    font-size: 4rem;
+}
+header div p {
+    color: var(--gray);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 50px 0;
+}
+
+
+
+
+
