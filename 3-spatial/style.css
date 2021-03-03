@@ -9,6 +9,7 @@
     --text: #666;
     --gray: #aaaaaa;
     --transition: .3s ease;
+    --py: 100px 0;
 }
 /***************
 basic styles
@@ -22,9 +23,12 @@ body {
     font-family: var(--fontFamily);
     font-weight: 400;
     font-size: var(--fontSize);
+    line-height: 1.6;
+    color: var(--text);
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
+    color: var(--headings);
 }
 ul {
     list-style: none;
@@ -46,6 +50,15 @@ button {
 }
 button:hover {
     background: var(--hover);
+}
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.container {
+    width: 72%;
+    margin: auto;
 }
 /***************
 header
@@ -105,8 +118,76 @@ header div h1 {
 header div p {
     color: var(--gray);
     font-size: 1.8rem;
-    line-height: 1.5;
     padding: 50px 0;
+}
+/***************
+intro
+***************/
+.intro {
+    width: 55%;
+    margin: auto;
+    padding: var(--py);
+    display: flex;
+    justify-content: space-between;
+}
+.intro article {
+    flex: 0 0 45%;
+}
+.intro h4,
+.gallery h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.intro p:first-child {
+    padding-bottom: 30px;
+}
+/***************
+gallery
+***************/
+.gallery {
+    padding: var(--py);
+    background: #f6f6f6;
+}
+.gallery h2,
+.gallery h4 {
+    text-align: center;
+}
+.gallery .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery .container div img {
+    width: 100%;
+    display: block;
+}
+.gallery .container div {
+    flex: 0 0 48%;
+}
+.gallery .container div h3 {
+    background: var(--white);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow:  0px 0px 3px var(--gray);
+}
+.gallery .buttons {
+    text-align: center;
+    margin-top: 60px;
+}
+.gallery .buttons button {
+    margin: 0 10px;
+    padding: 20px 40px;
+}
+.gallery .buttons button:last-child {
+    background: var(--headings);
 }
 
 
