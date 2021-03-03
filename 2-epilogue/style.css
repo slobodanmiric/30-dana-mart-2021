@@ -118,7 +118,6 @@ intro
 blog
 *************/
 .blog {
-    padding: 0px 0 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -162,7 +161,35 @@ blog
     transform: scale(1.1);
     transition: .5s ease;
 }
-
+/*************
+footer
+*************/
+footer {
+    text-align: center;
+    padding-bottom: 100px;
+}
+footer p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+footer .underline {
+    width: 10%;
+    background: var(--headings);
+    margin: 100px auto 100px auto;
+}
+footer .copy {
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+footer a {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 0 10px;
+}
+footer a:hover {
+    color: var(--red);
+    transition: var(--transition);
+}
 
 
 
