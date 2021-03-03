@@ -1,1 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root {
+    --fontFamily: 'Raleway', sans-serif;
+    --fontSize: 16px;
+    --accents: #f32853;
+    --hover: #f44066;
+    --white: #fff;
+    --headings: #484848;
+    --text: #666;
+    --gray: #aaaaaa;
+}
+body {
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    font-size: vr(--fontSize);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
