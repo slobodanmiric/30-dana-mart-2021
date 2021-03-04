@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 20px 0;
+        }
+        div {
+            width: 50%;
+            margin: auto;
+            background: navy;
+            padding: 100px;
+            color: white;
+        }
+        @media(min-width: 1200px) {
+            div {
+                background: red;
+            }
+        }
+        @media(min-width: 768px) and (max-width: 1024px) {
+            div {
+                width: 80%;
+                margin: auto;
+                background: linear-gradient(red,blueviolet,blue);
+                padding: 100px;
+                color: white;
+            }
+        }
+        @media(max-width: 767px) {
+            div {
+                background: blueviolet;
+                width: 90%;
+                padding: 30px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+   <div>
+       <h2>Responsive design</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque labore error architecto cumque explicabo omnis natus est odit consequatur eos molestias quas, magni voluptatem facere molestiae quia laboriosam nulla cum quaerat, dolorum at necessitatibus dolores. Enim, quidem, dolores? Eveniet sunt, a nesciunt blanditiis ab mollitia. Quas quam ipsum obcaecati molestias asperiores deserunt ipsa quod quasi adipisci dolores porro possimus commodi placeat facilis facere recusandae est quo ullam quos officiis aspernatur mollitia, ducimus soluta. Impedit alias sequi, unde sit, asperiores doloribus.</p>
+       <hr>
+       <h3>Lorem ipsum dolor.</h3>
+       <ul>
+           <li>Item 1</li>
+           <li>Item 2</li>
+           <li>Item 3</li>
+           <li>Item 4</li>
+           <li>Item 5</li>
+       </ul>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum modi, voluptate dolore eum minima tenetur optio, fugiat laudantium provident dolorem asperiores laborum officia aperiam quo necessitatibus ducimus. Doloribus magnam assumenda fugit facere modi placeat praesentium eum cum a neque.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fugiat, ex blanditiis, velit quidem iste maxime ullam explicabo soluta eligendi delectus expedita rerum vel perspiciatis mollitia laudantium consectetur voluptate incidunt! Architecto tenetur, quaerat enim sapiente eum expedita obcaecati beatae fuga. Sunt quos nobis atque ipsa iure quia expedita minus obcaecati.</p>
+   </div>
+    
+</body>
+</html>
