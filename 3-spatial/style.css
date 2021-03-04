@@ -10,6 +10,7 @@
     --gray: #aaaaaa;
     --transition: .3s ease;
     --py: 100px 0;
+    --pt: 100px 0 0 0;
 }
 /***************
 basic styles
@@ -134,7 +135,8 @@ intro
     flex: 0 0 45%;
 }
 .intro h4,
-.gallery h4 {
+.gallery h4,
+.services h4 {
     text-transform: uppercase;
     font-size: 2rem;
     color: var(--gray);
@@ -189,7 +191,65 @@ gallery
 .gallery .buttons button:last-child {
     background: var(--headings);
 }
-
+/***************
+services
+***************/
+.services {
+    padding: var(--pt);
+    padding-bottom: 20px;
+}
+.services article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.services article .col {
+    display: flex;
+    flex: 0 0 47%;
+    align-items: center;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+.services article img {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #e3e3e3;
+    display: block;
+}
+.services article img:hover {
+    border: 8px solid var(--accents);
+    transition: var(--transition);
+}
+.services article .col .text {
+    flex: 0 0 66%;
+}
+.services article .col .img {
+    flex: 0 0 27%;
+}
+.services article .col:nth-child(even) .text {
+    order: 2;
+}
+.services article .col:nth-child(even) .img {
+    order: 1;
+}
+.services article .col:nth-child(odd) .text {
+    text-align: right;
+}
+.services .text h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.services .text h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.services .text p {
+    font-size: 1.1rem;
+}
 
 
 
