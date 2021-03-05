@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;900&display=swap');
 :root {
     --fontFamily: 'Source Sans Pro', sans-serif;
     --accents: #3e86d8;
@@ -8,6 +8,7 @@
     --borders: #eaeaea;
     --fontSize: 16px;
     --transition: .3s ease;
+    --text: rgba(0,0,0,.8);
 }
 /************
 basic styles
@@ -19,10 +20,11 @@ basic styles
 }
 body {
     font-family: var(--fontFamily);
-    color: var(--primary);
+    color: var(--text);
     background: var(--accents);
     padding: 0 20px 100px 20px;
     font-size: var(--fontSize);
+    line-height: 1.6;
 }
 .container {
     width: 65%;
@@ -95,7 +97,24 @@ services
 ************/
 .services {
     background: var(--white);
+    padding: 100px 0;
 }
-
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services div {
+    flex: 0 0 24%;
+}
+.services p {
+    line-height: 1.8;
+}
+.services h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
 
 
