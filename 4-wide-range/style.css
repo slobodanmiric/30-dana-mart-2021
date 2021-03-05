@@ -90,7 +90,12 @@ header .icons a {
     font-size: 1.3rem;
     margin-left: 30px;
 }
-
+/************
+services
+************/
+.services {
+    background: var(--white);
+}
 
 
 
