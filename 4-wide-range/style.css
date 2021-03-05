@@ -22,7 +22,7 @@ body {
     font-family: var(--fontFamily);
     color: var(--text);
     background: var(--accents);
-    padding: 0 20px 100px 20px;
+    padding: 0 20px 50px 20px;
     font-size: var(--fontSize);
     line-height: 1.6;
 }
@@ -116,5 +116,70 @@ services
     font-weight: 400;
     margin-bottom: 40px;
 }
-
-
+/************
+blog
+************/
+.blog {
+    padding: 100px 0;
+    background: var(--lightgray);
+    border-top: 1px solid var(--borders);
+    text-align: center;
+}
+.blog .container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.blog .container div {
+    flex: 0 0 23%;
+}
+.blog h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.blog h4 {
+    color: #4b4b4b;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.blog h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px
+}
+.blog p {
+    color: #929292;
+}
+button {
+    background: var(--accents);
+    color: var(--white);
+    padding: 10px 15px;;
+    text-transform: uppercase;
+    font-size: .9rem;
+    border: none;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--primary);
+    transition: var(--transition);
+}
+/************
+footer
+************/
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer a {
+    color: var(--primary);
+}
+footer a:hover {
+    text-decoration: none;
+}
